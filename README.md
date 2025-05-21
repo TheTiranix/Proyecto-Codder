@@ -1,1 +1,1 @@
-Este es un proyecto web básico desarrollado con HTML5, CSS3 y Bootstrap 4/5, diseñado como una plantilla inicial para sitios responsivos. 
+Este es un proyecto web simple hecho con HTML, CSS y Bootstrap. Lo armé como base para futuras páginas o pruebas. Todo está organizado de forma básica pero funcional, con estilos adaptables y estructura clara. Ideal para seguir desarrollando encima o usar como plantilla rápida para ideas nuevas.
