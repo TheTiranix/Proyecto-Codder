@@ -1,0 +1,368 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+
+  :root {
+      --main-color: #111827;
+  }
+
+
+
+header p{
+	padding-bottom: 15px;
+
+
+}
+
+header {
+	font-family: walter turncoat;
+	background-color: var(--main-color);
+	color: #D2CCCC;
+display: grid;
+grid-template-columns: repeat(1, 1fr);\
+grid-template-rows: repeat(3, 1fr);
+justify-items: center;
+align-items: start;
+
+
+
+}
+
+header img{
+	width: 100px;
+}
+
+.cabeza{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.mipmark {
+	color: #6366f1;
+	border-radius: 30%;
+}
+
+nav {
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+nav a:hover{
+	color: #4f46e5;
+
+}
+
+
+main {
+	background-color: lightgray;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-content: flex-start;
+}
+
+.about-us{
+	display: flex;
+	background-color: lightgray;
+	justify-content: center;
+}
+
+.Pregunta {
+	color: 	dark;
+	background-color: darkgray;
+	text-align: center;
+	border: lightgray 2px solid;
+	border-radius: 10%;
+	font-size: 135%;
+	font-weight: 400;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin-block: 20px;
+
+
+}
+
+#entremedio {
+	margin: 20px;
+	margin-bottom: 10%;
+	background-color: white;
+	width:23%;
+	height: 28%;
+	color: #1f2937;
+	font-family: "Chewy", system-ui;
+	font-style: normal;
+	font-weight: 200;
+  flex-direction: column;
+	justify-content: flex-end;
+	align-content: flex-start;
+	padding-left: 8px;
+	padding-right: 5px;
+	border: black 3px solid;
+	border-radius: 10%;
+
+}
+
+
+.contenedor {
+	background-image: url(png/fondoTexto.png);
+	width: 1583px;
+	height: 1080px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-content: flex-start;
+
+}
+
+
+footer {
+	background:var(--main-color);
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.marki{
+	width: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.piecito{
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	color: white;
+}
+
+.piecito a{
+	text-decoration: none;
+	color: white;
+}
+
+div{
+	display: grid;
+	min-height: 100dvh;
+	grid-template-rows: auto 1fr auto;
+}
+
+.Licencias {
+	display: grid;
+	grid-template-columns:repeat(3, 1fr) ;
+	gap: 20px;
+	padding-top: 10%;
+
+
+}
+
+.paquetes {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.paquetes2 {
+    display: flex;
+    flex-direction: column;    margin: 10px;
+    padding: 10px;
+}
+
+.paquetes3{
+    display: flex;
+    flex-direction: column;    margin: 10px;
+    padding: 10px;
+
+}
+
+form{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	background-color: beige;
+	justify-items: center;
+	border: var(--main-color) 2px solid;
+}
+
+
+
+@media (max-width:1366px){
+
+	header h1{
+		font-size: 20px;
+		text-align: l;
+
+	}
+
+	header{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+		width: 100%;
+	}
+
+	header p{
+		font-size: auto;
+	}
+
+  nav ul {
+	color: white;
+  display: flex;
+	font-weight: 600;
+	height: 50%;
+  }
+   
+  
+  #entremedio {
+	margin: 20px;
+	margin-bottom: 10%;
+	background-color: white;
+	width:30%;
+	height: 40%;
+	color: black;
+	font-family: "Chewy", system-ui;
+	font-style: normal;
+	font-weight: 200;
+  flex-direction: column;
+	justify-content: flex-end;
+	align-content: flex-start;
+	padding-left: 8px;
+	padding-right: 5px;
+	border: black 3px solid;
+	border-radius: 10%;
+
+}
+
+
+
+  .contenedor {
+	background: beige url(png/fondoTexto.png) center top no-repeat;
+	width: 100%;
+	height: 1024px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-content: flex-start;
+
+}
+
+
+  .Licencias {
+	display: flex;
+	flex-direction: column;
+	padding-top: 10%;
+
+}
+
+
+}
+
+@media (max-width:700px){
+
+	header h1{
+		font-size: 20px;
+		text-align: l;
+
+	}
+
+	header{
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+grid-template-rows: repeat(3, auto);
+align-items: start;
+justify-items: start;
+		width: 100%;
+	}
+
+	header p{
+		font-size: 10px;
+	}
+
+  nav ul {
+	color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-template-rows: repeat(3, 1fr);
+	text-decoration: none;
+	font-weight: 600;
+	height: 50%;
+  }
+   
+  
+  #entremedio {
+	margin: 20px;
+	margin-bottom: 10%;
+	background-color: white;
+	width:50%;
+	height: 35%;
+	color: black;
+	font-family: "Chewy", system-ui;
+	font-style: normal;
+	font-weight: 200;
+  flex-direction: column;
+	justify-content: flex-end;
+	align-content: flex-start;
+	padding-left: 8px;
+	padding-right: 5px;
+	border: black 3px solid;
+	border-radius: 10%;
+
+}
+
+
+
+  .contenedor {
+	background-image: url(png/fondo-texto-mobile.png);
+	width: 100%;
+	height: 1024px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-content: flex-start;
+
+}
+
+
+  .Licencias {
+	display: flex;
+	flex-direction: column;
+	padding-top: 10%;
+
+}
+
+
+}
