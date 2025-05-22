@@ -28,12 +28,12 @@
 
     <nav><!-- La guia de navegaciion para poder navegar entre todas las secciones de la pagina !-->
         <ul>
-	  <li><a href="index.html" class="nav-link">INICIO</a></li>
-      <li><a href="descargas.html" target="_blank" class="nav-link">DESCARGAR</a></li>
-      <li><a href="soporte.html" target="_blank" class="nav-link">SOPORTE</a></li>
-      <li><a href="SobreNosotros.html" class="nav-link">SOBRE NOSOTROS</a></li>
-      <li><a href="blog.html" class="nav-link">BLOG</a></li>
-      <li><a href="licencias.html" class="nav-link">COMPRA TU LICENCIA</a></li>
+	  <li><a href="index.html" >INICIO</a></li>
+      <li><a href="descargas.html"  >DESCARGAR</a></li>
+      <li><a href="soporte.html"  >SOPORTE</a></li>
+      <li><a href="SobreNosotros.html" >SOBRE NOSOTROS</a></li>
+      <li><a href="blog.html" >BLOG</a></li>
+      <li><a href="licencias.html" >COMPRA TU LICENCIA</a></li>
        </ul>
     </nav>
 
@@ -46,26 +46,34 @@
 <!-- En esta seccion irian los comentarios que van dejando todos los clientes de la aplicacion... todavia no tengo muy desarrolada esta parte -->
 <section id="Comentarios">
 
-	<img src="png\descarga.png" width="64" height="64">
-	 <p>Laura M. (Gerente de almacén)</p>
-	 <p>Esta aplicación ha sido un cambio radical para nuestro almacén. La precisión en tiempo real nos ha permitido reducir drásticamente los errores y las pérdidas. Ahora siempre sabemos exactamente qué tenemos y dónde está. ¡Muy recomendable!</p>
+   <div class="post">
+	<img src="png\descarga.png" width="64" height="64" class="avatar">
+	 <p class="usuario">Laura M. (Gerente de almacén)</p>
+	 <p class="blog-mensajes">Esta aplicación ha sido un cambio radical para nuestro almacén. La precisión en tiempo real nos ha permitido reducir drásticamente los errores y las pérdidas. Ahora siempre sabemos exactamente qué tenemos y dónde está. ¡Muy recomendable!</p>
+   </div>
 
-	<img src="png\descarga.png" width="64" height="64">
-	 <p>Carlos R. (Propietario de tienda minorista)</p>
-	 <p>La integración con nuestro sistema de punto de venta es perfecta. Puedo ver las ventas y el stock actualizado al instante desde mi teléfono. Esto me ayuda a tomar decisiones rápidas y a evitar quedarme sin productos clave.</p>
+   <div class="post">
+	<img src="png\descarga.png" width="64" height="64" class="avatar">
+	 <p class="usuario">Carlos R. (Propietario de tienda minorista)</p>
+	 <p class="blog-mensajes">La integración con nuestro sistema de punto de venta es perfecta. Puedo ver las ventas y el stock actualizado al instante desde mi teléfono. Esto me ayuda a tomar decisiones rápidas y a evitar quedarme sin productos clave.</p>
+   </div>
+	
+   <div class="post">
+	<img src="png\descarga.png" width="64" height="64" class="avatar">
+	  <p class="usuario">Ana P. (Encargada de inventario)</p>
+	  <p class="blog-mensajes">La aplicación es buena, pero a veces se pone muy lenta y se traba en el celular, también me gustaría que tuviera mas opciones para generar reportes personalizados.</p>
+   </div>
 
-	<img src="png\descarga.png" width="64" height="64">
-	  <p>Ana P. (Encargada de inventario)</p>
-	  <p>La aplicación es buena, pero a veces se pone muy lenta y se traba en el celular, también me gustaría que tuviera mas opciones para generar reportes personalizados.</p>
+   <div class="post">
+	<img src="png\descarga.png" width="64" height="64" class="avatar">
+	  <p class="usuario">Javier L. (Gerente de logística)</p>
+	  <p class="blog-mensajes">La implementación fue complicada y tuvimos algunos problemas de integración con nuestros sistemas antiguos. Aunque ahora funciona bien, el soporte técnico tardó demasiado en resolver nuestras dudas iniciales.</p>
+   </div>
 
-	<img src="png\descarga.png" width="64" height="64">
-	  <p>Javier L. (Gerente de logística)</p>
-	  <p>La implementación fue complicada y tuvimos algunos problemas de integración con nuestros sistemas antiguos. Aunque ahora funciona bien, el soporte técnico tardó demasiado en resolver nuestras dudas iniciales.</p>
-x
 </section>
 
 <!-- El espacio para que los usuarios escriban sus comentarios, se logueen y suban sus mas sinceros pensamientos sobre la app !-->
-<form action="https://www.youtube.com/watch?v=dQw4w9WgXcQ" method="post">
+<form action="https://www.youtube.com/watch?v=dQw4w9WgXcQ" method="post" class="formulario-contacto">
 	<label form="Email">Email</label>
 	  <input type="text"></input>
 	<label form="contrasena">Contrasena</label>

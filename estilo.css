@@ -29,6 +29,8 @@ grid-template-columns: repeat(1, 1fr);\
 grid-template-rows: repeat(3, 1fr);
 justify-items: center;
 align-items: start;
+font-weight: 400;
+fon
 
 
 
@@ -88,6 +90,14 @@ main {
 
 }
 
+video {
+	margin: 100px;
+  max-width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+
 .lista-descargas ol {
   list-style-type: decimal;
   font-weight: 200;
@@ -101,8 +111,24 @@ main {
 
 .about-us{
 	display: flex;
-	background-color: lightgray;
+	background: linear-gradient(to bottom, #f3f4f6, #e5e7eb);
 	justify-content: center;
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
+}
+
+.about-us h2 {
+  font-size: 1.8rem;
+  border-bottom: 3px solid #6366f1;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .Pregunta {
@@ -205,26 +231,7 @@ div{
 
 }
 
-.paquetes {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    padding: 10px;
 
-}
-
-.paquetes2 {
-    display: flex;
-    flex-direction: column;    margin: 10px;
-    padding: 10px;
-}
-
-.paquetes3{
-    display: flex;
-    flex-direction: column;    margin: 10px;
-    padding: 10px;
-
-}
 
 .formulario-contacto {
   background-color: lightgray;
@@ -281,7 +288,46 @@ div{
   background-color: #1d4ed8;
 }
 
+.post {
+  background-color: var(--main-color);
+  padding: 40px;
+  max-width: 800px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  color: white;
+}
 
+#comentarios{
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.avatar{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #6366f1;
+}
+
+.blog-mensajes {
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.usuario {
+  font-weight: bold;
+  color: lightgray;
+}
 
 
 @media (max-width:1366px){
@@ -405,7 +451,7 @@ justify-items: start;
   #entremedio {
   width: 90%;
   height: auto;
-  font-size: 1rem;
+  font-size: auto;
   margin: 20px auto;
   padding: 15px;
   border-radius: 10px;
