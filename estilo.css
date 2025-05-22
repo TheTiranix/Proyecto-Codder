@@ -403,13 +403,14 @@ justify-items: start;
   }
 
   #entremedio {
-    width: 90%;
-    height: auto;
-    font-size: 1rem;
-    margin: 20px auto;
-    padding: 15px;
-    border-radius: 10px;
-  }
+  width: 90%;
+  height: auto;
+  font-size: 1rem;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+}
+
 
   .Pregunta {
     font-size: 1.2rem;
