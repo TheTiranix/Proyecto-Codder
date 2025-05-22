@@ -85,6 +85,18 @@ main {
 	flex-direction: column;
 	justify-content: flex-end;
 	align-content: flex-start;
+
+}
+
+.lista-descargas ol {
+  list-style-type: decimal;
+  font-weight: 200;
+ font-size: 20px;
+  margin-left: 20px;        
+}
+
+.lista-descargas ol li {
+	font-weight: bold;
 }
 
 .about-us{
@@ -110,6 +122,7 @@ main {
 }
 
 #entremedio {
+
 	margin: 20px;
 	margin-bottom: 10%;
 	background-color: white;
@@ -178,6 +191,11 @@ div{
 	grid-template-rows: auto 1fr auto;
 }
 
+.tarjeta{
+	height: 300px;
+	width: 300px;
+}
+
 .Licencias {
 	display: grid;
 	grid-template-columns:repeat(3, 1fr) ;
@@ -208,14 +226,61 @@ div{
 
 }
 
-form{
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-	background-color: beige;
-	justify-items: center;
-	border: var(--main-color) 2px solid;
+.formulario-contacto {
+  background-color: lightgray;
+  padding: 30px;
+  max-width: 500px;
+  margin: 40px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: sans-serif;
 }
+
+.formulario-contacto h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #1f2937;
+}
+
+.formulario-contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario-contacto label {
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+  resize: vertical;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.formulario-contacto button {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+  background-color: #1d4ed8;
+}
+
 
 
 
@@ -323,46 +388,60 @@ justify-items: start;
   }
    
   
+ .contenedor {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+  }
+
+  .contenedor img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
   #entremedio {
-	margin: 20px;
-	margin-bottom: 10%;
-	background-color: white;
-	width:50%;
-	height: 35%;
-	color: black;
-	font-family: "Chewy", system-ui;
-	font-style: normal;
-	font-weight: 200;
-  flex-direction: column;
-	justify-content: flex-end;
-	align-content: flex-start;
-	padding-left: 8px;
-	padding-right: 5px;
-	border: black 3px solid;
-	border-radius: 10%;
+    width: 90%;
+    height: auto;
+    font-size: 1rem;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+  }
 
-}
+  .Pregunta {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
 
+  .formulario-contacto {
+    width: 90%;
+    padding: 20px;
+    margin: 20px auto;
+  }
 
+  .formulario-contacto h2 {
+    font-size: 1.3rem;
+  }
 
-  .contenedor {
-	background-image: url(png/fondo-texto-mobile.png);
-	width: 100%;
-	height: 1024px;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-content: flex-start;
+  .formulario-contacto label {
+    font-size: 0.95rem;
+  }
 
-}
-
-
+  .formulario-contacto input,
+  .formulario-contacto textarea {
+    font-size: 1rem;
+  }
   .Licencias {
 	display: flex;
 	flex-direction: column;
 	padding-top: 10%;
 
 }
+
 
 
 }
