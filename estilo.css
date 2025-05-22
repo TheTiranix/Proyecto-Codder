@@ -21,7 +21,7 @@ header p{
 }
 
 header {
-	font-family: walter turncoat;
+	font-family: walter turncoat!important;
 	background-color: var(--main-color);
 	color: #D2CCCC;
 display: grid;
@@ -29,8 +29,8 @@ grid-template-columns: repeat(1, 1fr);\
 grid-template-rows: repeat(3, 1fr);
 justify-items: center;
 align-items: start;
-font-weight: 400;
-fon
+font-weight: 400 !important;  /* o prueba con 500 o 700 si quieres más grosor */
+
 
 
 
