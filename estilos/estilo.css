@@ -100,9 +100,9 @@ video {
 
 .lista-descargas ol {
   list-style-type: decimal;
+  margin: 30px;
   font-weight: 200;
- font-size: 20px;
-  margin-left: 20px;        
+ font-size: 20px;       
 }
 
 .lista-descargas ol li {
@@ -170,8 +170,8 @@ video {
 
 
 .contenedor {
-	background-image: url(png/fondoTexto.png);
-	width: 1583px;
+	background-image: url(../png/fondoTexto.png);
+	width: 1585px;
 	height: 1080px;
 	display: flex;
 	flex-direction: column;
@@ -229,6 +229,10 @@ div{
 	padding-top: 10%;
 
 
+}
+
+.card {
+	margin: 15%;
 }
 
 
@@ -381,7 +385,7 @@ align-items: center;
 
 
   .contenedor {
-	background: beige url(png/fondoTexto.png) center top no-repeat;
+	background: beige url(../png/fondoTexto.png) center top no-repeat;
 	width: 100%;
 	height: 1024px;
 	display: flex;
@@ -489,6 +493,10 @@ justify-items: start;
 
 }
 
-
+div{
+	display: grid;
+	min-height: 1000px;
+	grid-template-rows: auto 1fr auto;
+}
 
 }
