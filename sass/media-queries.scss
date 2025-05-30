@@ -1,0 +1,152 @@
+@media (max-width: 1366px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    h1 {
+      font-size: 20px;
+      text-align: left;
+    }
+
+    p {
+      font-size: auto;
+    }
+  }
+
+  nav ul {
+    color: white;
+    display: flex;
+    font-weight: 600;
+    height: 50%;
+  }
+
+  #entremedio {
+    margin: 20px;
+    margin-bottom: 10%;
+    background-color: white;
+    width: 30%;
+    height: 40%;
+    color: black;
+    font-family: "Chewy", system-ui;
+    font-style: normal;
+    font-weight: 200;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-start;
+    padding-left: 8px;
+    padding-right: 5px;
+    border: black 3px solid;
+    border-radius: 10%;
+  }
+
+  .contenedor {
+    background: beige url(../png/fondoTexto.png) center top no-repeat;
+    width: 100%;
+    height: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-start;
+    overflow-x: hidden;
+  }
+
+  .Licencias {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+    align-items: start;
+    justify-items: start;
+    width: 100%;
+
+    h1 {
+      font-size: 20px;
+      text-align: left;
+    }
+
+    p {
+      font-size: 10px;
+    }
+  }
+
+  nav ul {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(3, 1fr);
+    text-decoration: none;
+    font-weight: 600;
+    height: 50%;
+  }
+
+  .contenedor {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  #entremedio {
+    width: 90%;
+    height: auto;
+    font-size: auto;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .Pregunta {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .formulario-contacto {
+    width: 90%;
+    padding: 20px;
+    margin: 20px auto;
+
+    h2 {
+      font-size: 1.3rem;
+    }
+
+    label {
+      font-size: 0.95rem;
+    }
+
+    input,
+    textarea {
+      font-size: 1rem;
+    }
+  }
+
+  .Licencias {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+  }
+
+  .pag {
+    display: grid;
+    min-height: 1000px;
+    max-height: 100%;
+    grid-template-rows: auto 1fr auto;
+  }
+}

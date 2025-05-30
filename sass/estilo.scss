@@ -1,0 +1,333 @@
+$main-color: #111827;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #111827;
+}
+
+header {
+  font-family: "walter turncoat" !important;
+  background-color: $main-color;
+  color: #D2CCCC;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    padding-bottom: 15px;
+  }
+
+  img {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 20px;
+    text-align: left;
+  }
+}
+
+.cabeza {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mipmark {
+  color: #6366f1;
+  border-radius: 30%;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subtitulo-personalizado {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.descripcion-personalizada {
+  font-size: 20px;
+  text-align: center;
+}
+
+nav {
+  padding: 10px 20px;
+
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0 15px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      color: #4f46e5;
+    }
+  }
+}
+
+main {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: flex-start;
+}
+
+video {
+  margin: 100px;
+  max-width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.lista-descargas {
+  ol {
+    list-style-type: decimal;
+    margin: 30px;
+    font-weight: 200;
+    font-size: 20px;
+
+    li {
+      font-weight: bold;
+    }
+  }
+}
+
+.about-us {
+  display: flex;
+  background: linear-gradient(to bottom, #f3f4f6, #e5e7eb);
+  justify-content: center;
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
+
+  h2 {
+    font-size: 1.8rem;
+    border-bottom: 3px solid #6366f1;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+}
+
+.Pregunta {
+  color: dark;
+  background-color: darkgray;
+  text-align: center;
+  border: lightgray 2px solid;
+  border-radius: 10%;
+  font-size: 135%;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-block: 20px;
+}
+
+#entremedio {
+  margin: 20px;
+  margin-bottom: 10%;
+  background-color: white;
+  width: 23%;
+  height: 28%;
+  color: #1f2937;
+  font-family: "Chewy", system-ui;
+  font-style: normal;
+  font-weight: 200;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: flex-start;
+  padding-left: 8px;
+  padding-right: 5px;
+  border: black 3px solid;
+  border-radius: 10%;
+}
+
+.contenedor {
+  background-image: url(../png/fondoTexto.png);
+  width: 1585px;
+  height: 1080px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: flex-start;
+}
+
+footer {
+  background: $main-color;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.marki {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.piecito {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.pag {
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+}
+
+.tarjeta {
+  height: 300px;
+  width: 300px;
+}
+
+.Licencias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-top: 10%;
+}
+
+.formulario-contacto {
+  background-color: lightgray;
+  padding: 30px;
+  max-width: 500px;
+  margin: 40px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #1f2937;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  label {
+    font-weight: 600;
+    color: #374151;
+    font-size: 0.95rem;
+  }
+
+  input,
+  textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    resize: vertical;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #1d4ed8;
+    }
+  }
+}
+
+.post {
+  background-color: $main-color;
+  padding: 40px;
+  max-width: 800px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  color: white;
+}
+
+#comentarios {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #6366f1;
+}
+
+.blog-mensajes {
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.usuario {
+  font-weight: bold;
+  color: lightgray;
+}
+
+header,
+nav,
+main,
+footer {
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+@import "media-queries.scss";
+
