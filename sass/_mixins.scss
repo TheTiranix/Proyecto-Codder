@@ -1,0 +1,28 @@
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin soft-shadow {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@mixin animated-btn($color: #6c5ce7) {
+  background-color: $color;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: darken($color, 10%);
+    transform: scale(1.05);
+  }
+}
+
+@mixin responsive-text($min: 1rem, $max: 2rem) {
+  font-size: clamp(#{$min}, 4vw, #{$max});
+}

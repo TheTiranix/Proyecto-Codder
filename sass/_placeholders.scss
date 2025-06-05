@@ -1,0 +1,19 @@
+
+%tarjeta {
+  border-radius: 15px;
+  padding: 20px;
+  background: white;
+  @include soft-shadow;
+}
+
+%contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+%titulo {
+  font-family: 'Acme', sans-serif;
+  @include responsive-text(1.2rem, 2.5rem);
+  text-align: center;
+}

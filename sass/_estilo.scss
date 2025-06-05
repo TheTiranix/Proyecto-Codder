@@ -75,7 +75,7 @@ nav {
   }
 
   a {
-    color: white;
+    color: #ffff;
     text-decoration: none;
     font-weight: bold;
 
@@ -194,6 +194,7 @@ video {
   font-style: normal;
   font-weight: auto;
 
+
   }
 }
 
@@ -208,9 +209,7 @@ footer {
 
 .marki {
   width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
 }
 
 .piecito {
