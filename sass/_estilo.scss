@@ -65,39 +65,38 @@ nav {
   }
 
   a {
-    color: #ffff;
-    text-decoration: none;
-    font-weight: bold;
-    font-weight: 600;
-    font-size: 13px;
-
-    &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    transition: all 0.2s ease;
-    color: #4f46e5;
-    }
-
-    &{
     position: relative;
     overflow: hidden;
-    }
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    display: inline-block;
+    padding-bottom: 5px;
+    transition: transform 0.3s ease, color 0.3s ease;
 
     &::after {
-    content: "";
-    position: absolute;
-    bottom: 0; left: 0;
-    width: 0%; height: 2px;
-    background: #4f46e5;
-    transition: width 0.1s ease;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: #4f46e5;
+      transition: width 0.3s ease;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      color: #4f46e5;
     }
 
     &:hover::after {
-    width: 100%;
+      width: 100%;
     }
-
   }
 }
+
 
 main {
   background-color: lightgray;
